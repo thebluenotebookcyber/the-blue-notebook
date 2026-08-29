@@ -1,4 +1,3 @@
-# the-blue-notebook
 # 🔵 The Blue Notebook
 
 > Learning cybersecurity from zero, one page at a time.
