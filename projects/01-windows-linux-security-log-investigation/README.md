@@ -117,6 +117,12 @@ The investigation approach was:
 
 The original project repository contains the sanitized Windows Event Viewer evidence screenshots. The investigation documentation has been migrated into **The Blue Notebook** as Project 01 so that all projects follow one portfolio structure.
 
+### Case 01 Evidence
+
+![Event ID 4625 — Failed logon](https://raw.githubusercontent.com/thebluenotebookcyber/windows-linux-security-log-investigation/main/screenshots/windows_events/01_4625_failed_logon_general.png)
+
+![Event ID 4799 — Group enumeration](https://raw.githubusercontent.com/thebluenotebookcyber/windows-linux-security-log-investigation/main/screenshots/windows_events/02_4799_group_enumeration_general.png)
+
 Original evidence repository:
 https://github.com/thebluenotebookcyber/windows-linux-security-log-investigation
 
