@@ -21,16 +21,30 @@ Enabled the Windows inbound ICMPv4 Echo Request rule.
 After the firewall rule was enabled, Ubuntu successfully pinged the Windows Host-Only adapter with 0% packet loss.
 
 ## Evidence
-Evidence screenshots will be added to this section.
 
-- 01 — IP configuration
-- 02 — Routing table
-- 03 — Initial Host-Only ping failure
-- 04 — Windows-to-Ubuntu ping success
-- 05 — Windows ICMP firewall check
-- 06 — Disabled ICMPv4 Echo rule
-- 07 — ICMPv4 rule enabled
-- 08 — Host-Only ping success after fix
+### 01 — IP Configuration
+![IP Configuration](01-ip-configuration.png)
+
+### 02 — Routing Table
+![Routing Table](02-routing-table.png)
+
+### 03 — Initial Host-Only Ping Failure
+![Host-Only Ping Failure](03-host-only-ping-failure.png)
+
+### 04 — Windows-to-Ubuntu Ping Success
+![Windows-to-Ubuntu Ping Success](04-windows-to-ubuntu-ping-succes.png)
+
+### 05 — Windows ICMP Firewall Check
+![Windows ICMP Firewall Check](05-windows-icmp-firewall-check.png)
+
+### 06 — Disabled ICMPv4 Echo Rule
+![Disabled ICMPv4 Echo Rule](06-disabled-icmpv4-echo-rule.png)
+
+### 07 — ICMPv4 Rule Enabled
+![ICMPv4 Rule Enabled](07-icmpv4-rule-enabled.png)
+
+### 08 — Host-Only Ping Success After Fix
+![Host-Only Ping Success After Fix](08-host-only-ping-success-after-fix.png)
 
 ## Key Learning
 A connectivity problem can be directional. Testing both directions and checking the relevant host firewall helped isolate the issue instead of assuming the VirtualBox network itself was broken.
