@@ -24,13 +24,21 @@ Restarted the SSH service.
 The final Windows `Test-NetConnection` test confirmed TCP port 22 was reachable again.
 
 ## Evidence
-Evidence screenshots will be added to this section.
 
-- 29 — SSH service baseline
-- 30 — SSH service failure
-- 31 — SSH service logs
-- 32 — SSH service restored
-- 33 — SSH port final verification
+### 29 — SSH service baseline
+![29 — SSH service baseline](./29-ssh-service-baseline.png)
+
+### 30 — SSH service failure
+![30 — SSH service failure](./30-ssh-service-failure.png)
+
+### 31 — SSH service logs
+![31 — SSH service logs](./31-ssh-service-logs.png)
+
+### 32 — SSH service restored
+![32 — SSH service restored](./32-ssh-service-restored.png)
+
+### 33 — SSH port final verification
+![33 — SSH port final verification](./33-ssh-port-final-verification.png)
 
 ## Key Learning
 Service troubleshooting should combine service state, logs, listening-port checks, and an external connectivity test rather than relying on a single indicator.
