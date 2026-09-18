@@ -33,7 +33,7 @@ Every topic will have notes, practical work, and things I learned from the proce
 
 ### Project 01 — Windows & Linux Security Log Investigation
 
-Hands-on Windows and Linux security log investigations from a controlled SOC lab environment.
+Hands-on Windows and Linux security log investigations from a controlled SOC lab environment.\n\n[View Project 01 →](projects/01-windows-linux-security-log-investigation/)\n
 
 ### Project 02 — Network Troubleshooting & Infrastructure Lab
 
