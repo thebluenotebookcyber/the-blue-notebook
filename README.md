@@ -29,6 +29,18 @@ I'm learning, practicing, making mistakes, fixing them, and writing everything d
 
 Every topic will have notes, practical work, and things I learned from the process.
 
+## 🛠️ Projects
+
+### Project 01 — Windows & Linux Security Log Investigation
+
+Hands-on Windows and Linux security log investigations from a controlled SOC lab environment.
+
+### Project 02 — Network Troubleshooting & Infrastructure Lab
+
+Hands-on troubleshooting of Windows ↔ Linux connectivity, DNS, SSH, TCP ports, firewall rules, and Linux service states.
+
+[View Project 02 →](projects/02-network-troubleshooting-infrastructure-lab/)
+
 ## ⚠️ About the Labs
 
 All practical security work is performed in my own lab environments or platforms where I have permission to test.
