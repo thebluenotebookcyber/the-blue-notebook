@@ -23,15 +23,27 @@ Restored the working DNS server configuration on the Ubuntu NAT interface.
 Hostname resolution succeeded again after the DNS configuration was restored.
 
 ## Evidence
-Evidence screenshots will be added to this section.
 
-- 09 — DNS baseline
-- 10 — Internet IP baseline
-- 11 — DNS misconfiguration
-- 12 — DNS failure while IP connectivity still works
-- 13 — DNS query timeout
-- 14 — DNS restored
-- 15 — DNS fix verified
+### 09 — DNS Baseline
+![DNS Baseline](09-dns-baseline.png)
+
+### 10 — Internet IP Baseline
+![Internet IP Baseline](10-internet-ip-baseline.png)
+
+### 11 — DNS Misconfiguration
+![DNS Misconfiguration](11-dns-misconfiguration.png)
+
+### 12 — DNS Failure — IP Still Works
+![DNS Failure — IP Still Works](12-dns-failure-ip-still-works.png)
+
+### 13 — DNS Query Timeout
+![DNS Query Timeout](13-dns-query-timeout.png)
+
+### 14 — DNS Restored
+![DNS Restored](14-dns-restored.png)
+
+### 15 — DNS Fix Verified
+![DNS Fix Verified](15-dns-fix-verified.png)
 
 ## Key Learning
 When an IP address works but a hostname does not, DNS should be investigated separately from basic network connectivity.
