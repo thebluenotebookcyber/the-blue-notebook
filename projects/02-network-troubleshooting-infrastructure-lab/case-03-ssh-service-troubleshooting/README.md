@@ -23,15 +23,27 @@ Restored the SSH socket/service so that the SSH daemon could accept connections.
 The SSH connection from Windows to Ubuntu succeeded after the service/socket was restored.
 
 ## Evidence
-Evidence screenshots will be added to this section.
 
-- 16 — SSH baseline success
-- 17 — SSH service stopped
-- 18 — SSH port listening
-- 19 — SSH port not listening
-- 20 — SSH connection refused
-- 21 — SSH port restored
-- 22 — SSH connection restored
+### 16 — SSH Baseline Success
+![SSH Baseline Success](16-ssh-baseline-success.png)
+
+### 17 — SSH Service Stopped
+![SSH Service Stopped](17-ssh-service-stopped.png)
+
+### 18 — SSH Port Listening
+![SSH Port Listening](18-ssh-port-listening.png)
+
+### 19 — SSH Port Not Listening
+![SSH Port Not Listening](19-ssh-port-not-listening.png)
+
+### 20 — SSH Connection Refused
+![SSH Connection Refused](20-ssh-connection-refused.png)
+
+### 21 — SSH Port Restored
+![SSH Port Restored](21-ssh-port-restored.png)
+
+### 22 — SSH Connection Restored
+![SSH Connection Restored](22-ssh-connection-restored.png)
 
 ## Key Learning
 A connection refusal can indicate that the destination service is not listening. Checking both service state and listening ports helps separate service problems from network problems.
