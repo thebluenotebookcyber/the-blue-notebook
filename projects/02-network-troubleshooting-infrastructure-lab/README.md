@@ -373,9 +373,9 @@ The main lesson from this project was to troubleshoot systematically, collect ev
 
 ## 📸 Evidence
 
-Screenshots from the lab will be organized alongside this project, covering the investigation from initial configuration through final verification.
+The lab evidence is currently documented through the investigation notes above. Screenshot files are not yet organized in this repository.
 
-The evidence numbering follows the chronological order used during the lab:
+The evidence numbering below is the chronological order used during the lab and can be used later when the screenshots are added:
 
 ```text
 01–08   Case 01 — Host-Only Connectivity
