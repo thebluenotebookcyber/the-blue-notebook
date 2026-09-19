@@ -105,7 +105,7 @@ When reviewing a Windows security event, ask:
 
 | Case | Main Event(s) | Verdict |
 |---|---|---|
-| **Case 01** | 4625 + 4799 | Likely benign / false positive |
+| **Case 01** | 4625 + 4799 | Likely benign based on available evidence |
 | **Case 02** | 4688 | Likely benign / normal Windows activity |
 | **Case 03** | Linux `auth.log` | Likely benign / normal lab activity |
 | **Case 04** | Correlation exercise | Likely true positive / escalate |
