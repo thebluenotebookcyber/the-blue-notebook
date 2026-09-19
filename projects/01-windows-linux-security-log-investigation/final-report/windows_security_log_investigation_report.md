@@ -8,10 +8,10 @@ The investigation focused on authentication activity, process creation, account 
 
 The project produced three evidence-backed lab investigations and one separate correlation exercise:
 
-- **Case 01:** Windows failed logon and local group enumeration — likely benign / false positive
+- **Case 01:** Windows failed logon and local group enumeration — likely benign activity based on available evidence
 - **Case 02:** Windows process creation involving `lsass.exe` — likely benign / normal Windows activity
 - **Case 03:** Linux SSH and authentication activity — likely benign / normal lab activity
-- **Case 04:** Suspicious activity correlation exercise — likely true positive / escalate
+- **Case 04:** Suspicious activity correlation exercise — practice escalation assessment
 
 The main lesson from the project was that a security alert or event ID should not be treated as an incident by itself. The analyst must correlate events, inspect context, verify evidence, and then make a decision.
 
@@ -19,7 +19,7 @@ The main lesson from the project was that a security alert or event ID should no
 
 ## 2. Investigation Objective
 
-The objective was to practice the core workflow of a SOC Analyst L1:
+The objective was to practice a basic SOC investigation workflow:
 
 1. Identify relevant security events.
 2. Understand what each event means.
@@ -60,7 +60,7 @@ The investigation was guided by one question:
 
 ## 4. Methodology
 
-The investigation followed a simple SOC workflow:
+The investigation followed a simple workflow:
 
 ```text
 Alert / Event
@@ -135,14 +135,11 @@ A related 4799 group enumeration event was also reviewed. The activity was not t
 
 ### Evidence Files
 
-```text
-screenshots/windows_events/01_4625_failed_logon_general.png
-screenshots/windows_events/02_4799_group_enumeration_general.png
-```
+The sanitized screenshots for this case are stored in the original evidence repository referenced in the Project 01 README.
 
 ### Verdict
 
-**Likely Benign / False Positive**
+**Likely Benign Activity Based on Available Evidence**
 
 **Confidence: Moderate**
 
@@ -299,7 +296,7 @@ Outbound network activity
 
 ### Analysis
 
-Each event on its own requires investigation. Together, the sequence is significantly more concerning because it shows a progression from remote access to privilege establishment and command execution.
+Each event on its own requires investigation. Together, the sequence is more concerning because it shows a progression from remote access to privilege establishment and command execution.
 
 Important questions for a real investigation would include:
 
@@ -314,9 +311,9 @@ Important questions for a real investigation would include:
 
 ### Verdict
 
-**Likely True Positive / Escalate for Further Investigation**
+**Practice Assessment: Escalate for Further Investigation**
 
-The correlation strongly supports suspicious activity, but a real SOC investigation would continue collecting host, identity, network, and change-management evidence before declaring the full incident scope.
+The correlation supports treating the sequence as suspicious for the purpose of the exercise, but a real SOC investigation would continue collecting host, identity, network, and change-management evidence before declaring the full incident scope.
 
 ### SOC Lesson
 
@@ -326,18 +323,18 @@ The strongest signal is often the **sequence of related events**, not one isolat
 
 # 6. Findings Summary
 
-| Case | Platform | Main Activity | Evidence | Verdict | Confidence |
+| Case | Platform | Main Activity | Evidence | Assessment | Confidence |
 |---|---|---|---|---|---|
-| 01 | Windows | Failed logon + group enumeration | Lab evidence | Likely benign / FP | Moderate |
+| 01 | Windows | Failed logon + group enumeration | Lab evidence | Likely benign | Moderate |
 | 02 | Windows | `lsass.exe` process creation | Lab evidence | Likely benign | High |
 | 03 | Linux | SSH + authentication logs | Lab evidence | Likely benign | High |
-| 04 | Windows-style scenario | Correlated suspicious sequence | Exercise | Likely TP / escalate | Practice assessment |
+| 04 | Windows-style scenario | Correlated suspicious sequence | Exercise | Practice escalation assessment | Practice |
 
 ---
 
-# 7. Skills Demonstrated
+# 7. Skills Practiced
 
-This project demonstrates practical experience with:
+This project gave me hands-on practice with:
 
 - Windows Event Viewer
 - Windows Security Event IDs
@@ -353,10 +350,8 @@ This project demonstrates practical experience with:
 - SSH investigation
 - `sudo` authentication analysis
 - Timeline correlation
-- False-positive identification
-- True-positive triage
 - Evidence handling
-- SOC-style incident documentation
+- SOC-style investigation documentation
 
 ---
 
@@ -396,17 +391,17 @@ The analyst should clearly separate what the evidence proves from what is only p
 
 ### 6. Documentation is part of the investigation
 
-A good SOC analyst should be able to explain not only the verdict, but **why** the verdict was reached and what remains unknown.
+A good investigation record should explain not only the assessment, but **why** it was reached and what remains unknown.
 
 ---
 
 # 10. Final Conclusion
 
-The investigation successfully demonstrated a basic SOC Analyst L1 workflow across Windows and Linux environments.
+The investigation helped me practice a basic SOC investigation workflow across Windows and Linux environments.
 
 The most important skill developed through this project was not memorizing Event IDs. It was learning to investigate activity as a timeline, correlate multiple data points, verify evidence, and avoid jumping to conclusions.
 
-The project reinforces the core SOC mindset:
+The project reinforces the core investigation mindset:
 
 > **WHO did WHAT, WHEN, FROM WHERE, and WAS IT NORMAL?**
 
