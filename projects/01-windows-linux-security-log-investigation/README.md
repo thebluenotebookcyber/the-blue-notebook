@@ -10,7 +10,7 @@ The goal of this project was to practice how a SOC analyst investigates authenti
 - Understand authentication and process-creation activity
 - Correlate related events and build timelines
 - Distinguish normal activity from suspicious activity
-- Practice false-positive / true-positive triage
+- Practice benign / suspicious activity triage
 - Document findings using evidence and clear reasoning
 
 ## Lab Environment
@@ -22,7 +22,7 @@ The goal of this project was to practice how a SOC analyst investigates authenti
 - Windows PowerShell
 - Linux `/var/log/auth.log`
 
-## Skills Demonstrated
+## Skills Practiced
 
 - Windows Event Log analysis
 - Event ID investigation
@@ -32,7 +32,7 @@ The goal of this project was to practice how a SOC analyst investigates authenti
 - Event correlation and timeline building
 - SOC alert triage
 - Evidence handling
-- False-positive / suspicious-activity assessment
+- Benign / suspicious-activity assessment
 
 ## Project Structure
 
@@ -56,7 +56,7 @@ The goal of this project was to practice how a SOC analyst investigates authenti
 
 Investigated a Windows Event ID 4625 failed logon and correlated it with surrounding system activity, including Event ID 4799 group enumeration.
 
-**Assessment:** Likely benign / false positive — moderate confidence.
+**Assessment:** Likely benign activity based on available evidence — moderate confidence.
 
 The investigation found the failed authentication associated with a legitimate Windows User Manager service context. The exact reason for the authentication attempt was not established, so the conclusion remains appropriately cautious.
 
@@ -115,7 +115,7 @@ The investigation approach was:
 
 ## Evidence
 
-The original project repository contains the sanitized Windows Event Viewer evidence screenshots. The investigation documentation has been migrated into **The Blue Notebook** as Project 01 so that all projects follow one portfolio structure.
+The sanitized Windows Event Viewer screenshots referenced by Case 01 are stored in the original evidence repository used for this work. They are linked here rather than duplicated in this repository.
 
 ### Case 01 Evidence
 
@@ -128,7 +128,7 @@ https://github.com/thebluenotebookcyber/windows-linux-security-log-investigation
 
 ## Evidence Handling
 
-Only sanitized evidence is intended for this repository. Personal usernames, hostnames, and other unnecessary identifying details are removed from screenshots before publication.
+Only sanitized evidence is intended for public repositories. Personal usernames, hostnames, and other unnecessary identifying details are removed from screenshots before publication.
 
 Raw security logs or sensitive system information should not be uploaded to a public repository.
 
