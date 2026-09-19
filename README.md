@@ -27,19 +27,33 @@ I'm learning, practicing, making mistakes, fixing them, and writing everything d
 
 **Learn → Understand → Practice → Document → Share**
 
-Every topic will have notes, practical work, and things I learned from the process.
+I document the things I actually learn and practice. Some pages may start simple, contain mistakes, or change as my understanding improves.
+
+The goal is not to make everything look perfect. The goal is to build a useful record of the journey.
 
 ## 🛠️ Projects
 
 ### Project 01 — Windows & Linux Security Log Investigation
 
-Hands-on Windows and Linux security log investigations from a controlled SOC lab environment.\n\n[View Project 01 →](projects/01-windows-linux-security-log-investigation/)\n
+Hands-on Windows and Linux security log investigations from a controlled lab environment.
+
+[View Project 01 →](projects/01-windows-linux-security-log-investigation/)
 
 ### Project 02 — Network Troubleshooting & Infrastructure Lab
 
 Hands-on troubleshooting of Windows ↔ Linux connectivity, DNS, SSH, TCP ports, firewall rules, and Linux service states.
 
 [View Project 02 →](projects/02-network-troubleshooting-infrastructure-lab/)
+
+## 📓 Learning Journey
+
+The learning notes will be added as I work through the fundamentals.
+
+The journey is being built around:
+
+**Networking → Linux → Windows → Security Fundamentals → Logs → SOC / Blue Team → SIEM → Detection → Investigation**
+
+The order may change as I learn, practice, and discover what I need to understand better.
 
 ## ⚠️ About the Labs
 
@@ -49,10 +63,6 @@ This project is for learning and defensive cybersecurity purposes.
 
 ---
 
-### 📓 Start the journey
-
-**Page 01 — Coming soon...**
-
-> Learn. Lab. Document. Defend.
+> **Learn. Lab. Document. Defend.**
 >
 > One page at a time. 🔵
