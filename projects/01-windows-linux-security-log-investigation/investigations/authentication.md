@@ -1,7 +1,5 @@
 # Authentication Log Investigation
 
-# Authentication Log Investigation
-
 ## Scope
 
 This investigation focuses on Windows authentication-related security events collected from a controlled Windows 11 lab environment.
@@ -103,7 +101,7 @@ No evidence in this case established an external source, repeated authentication
 
 ## Verdict
 
-**Classification: Likely Benign / False Positive**
+**Classification: Likely Benign Activity Based on Available Evidence**
 
 **Confidence: Moderate**
 
@@ -124,7 +122,7 @@ However, the exact reason the User Manager service generated the authentication-
 
 ## Evidence
 
-Sanitized screenshots collected during the investigation are stored under:
+The sanitized screenshots referenced in this investigation are stored in the original evidence repository:
 
 ```text
 screenshots/windows_events/
