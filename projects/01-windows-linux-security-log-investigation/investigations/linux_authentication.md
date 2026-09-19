@@ -10,7 +10,7 @@ Investigate authentication activity recorded in `/var/log/auth.log` and determin
 
 - Operating system: Ubuntu Linux virtual machine
 - Hostname: `blue-notebook`
-- Lab user: `mayur`
+- Lab user: `LAB_USER`
 - SSH source: Windows host-only interface `192.168.96.1`
 - Authentication log: `/var/log/auth.log`
 
@@ -26,11 +26,11 @@ The relevant activity included:
 
 | Time (UTC) | Activity | Source / Context |
 |---|---|---|
-| 15:51:32 | Local console login/session for `mayur` | Local system |
+| 15:51:32 | Local console login/session for `LAB_USER` | Local system |
 | 15:53:43 | `sudo systemctl status ssh` | Local `sudo` activity |
 | 15:54:35 | `sudo ss -tlnp` | Local `sudo` activity |
 | 15:55:36 | SSH connection closed | `192.168.96.1` |
-| 15:56:41 | Successful SSH password authentication for `mayur` | `192.168.96.1` |
+| 15:56:41 | Successful SSH password authentication for `LAB_USER` | `192.168.96.1` |
 | 15:56:41 | SSH session opened | `192.168.96.1` |
 | 15:58:01 | Failed `sudo` authentication | Local session |
 | 15:58:07 | Successful `sudo` authentication | Local session |
@@ -79,7 +79,7 @@ Local Ubuntu session
       |
       +--> SSH connection from 192.168.96.1
       |
-      +--> Successful SSH authentication for mayur
+      +--> Successful SSH authentication for LAB_USER
       |
       +--> One failed sudo authentication
       |
